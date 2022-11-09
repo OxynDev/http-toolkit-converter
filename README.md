@@ -10,7 +10,7 @@ Install my-project with npm
 ```python
 import htconv
 
-res = htconv.ColventerHttp().convert("""METHOD: POST
+stringx = """METHOD: POST
 URL
 https://graphigo.prd.dlive.tv/
 HEADERS
@@ -49,7 +49,9 @@ x-dlive-mid:
 x-dlive-mtype:
 android
 x-dlive-mversion:
-1.16.44""")
+1.16.44"""
+
+res = htconv.ColventerHttp().convert(stringx, oneline=None)
 
 print(res)
 ```
