@@ -25,7 +25,7 @@ class ColventerHttp:
             lines = self.request_string.split("HEADERS\n")[1].splitlines() 
             pairs = zip(lines[0::2], lines[1::2])
             for i in list(pairs):
-                self.headers[numpy.asarray(i)[0]] = numpy.asarray(i)[1]
+                self.headers[numpy.asarray(i)[0][:-1]] = numpy.asarray(i)[1]
         else:
             self.headers = None
         
