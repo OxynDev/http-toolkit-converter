@@ -3,9 +3,9 @@
 Convert http toolkit string to python httpx request
 
 ![Logo](https://media.discordapp.net/attachments/1006892478361784390/1039992321342709861/fdgdgdfgdf.png?width=1438&height=671)
-## Installation 
+## Usage
 
-Install my-project with npm
+
 
 ```python
 import htconv
